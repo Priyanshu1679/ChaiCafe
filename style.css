@@ -1,0 +1,263 @@
+ *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#faf7f2;
+}
+
+
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#4e342e;
+color:white;
+}
+
+nav a{
+margin-left:20px;
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+
+
+.hero{
+height:90vh;
+background:url("https://content.jdmagicbox.com/v2/comp/thane/r2/022pxx22.xx22.240606120135.u2r2/catalogue/chai-sutta-cafe-ulhasnagar-no-4-thane-tea-lounges-s9qkbgiwpr.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+
+}
+
+.hero button{
+padding:12px 30px;
+border:none;
+background:#ff9800;
+color:white;
+border-radius:30px;
+cursor:pointer;
+}
+
+#orderMessage{
+margin-top:15px;
+font-size:22px;
+color:yellow;
+}
+
+
+.menu{
+padding:80px;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+gap:20px;
+justify-items: center;
+}
+
+.card{
+width: 250px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+backdrop-filter: blur(5px);
+justify-content:center;
+align-items:center;
+}
+
+.modal-content{
+background:linear-gradient(to right, #ffcc80,#ffe0b2);
+padding:30px;
+border-radius:10px;
+width:350px;
+text-align:center;
+animation:fadeIn 0.4s;
+}
+
+.close{
+float:right;
+font-size:28px;
+cursor:pointer;
+}
+
+@keyframes fadeIn{
+
+from{
+transform:scale(0.7);
+opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity:1;
+}
+
+}
+.hero h2{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+
+
+.about{
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding:80px;
+background:#fff3e0;
+}
+
+.about img{
+width:350px;
+border-radius:20px;
+}
+
+
+
+.reviews{
+text-align:center;
+padding:60px;
+}
+
+.review-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.review{
+background:white;
+padding:20px;
+width:250px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.contact{
+text-align:center;
+padding:60px;
+background:#fbe9e7;
+}
+
+.contact iframe{
+width:80%;
+height:300px;
+margin-top:20px;
+border:0;
+}
+
+
+
+footer{
+background:#4e342e;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+
+.hero button{
+padding:12px 30px;
+border:none;
+background:#ff9800;
+color:white;
+border-radius:30px;
+cursor:pointer;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.1);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+
+
+.card{
+transition:all 0.4s ease;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 15px 25px rgba(0,0,0,0.3);
+}
+
+
+
+.review{
+transition:0.4s;
+}
+
+.review:hover{
+transform:scale(1.05);
+}
+
+
+
+.fade-section{
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+
+.fade-section.show{
+opacity:1;
+transform:translateY(0);
+}  
